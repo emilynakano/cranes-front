@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b5f2a9c3-6863-419a-b97c-ea86226add44"
+      }
+    },
+    "owner": "emilynakano"
   }
 }
