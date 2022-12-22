@@ -4,7 +4,6 @@ import React from 'react';
 function Auth() {
   return (
     <View>
-
       <Text>Auth</Text>
     </View>
   );
