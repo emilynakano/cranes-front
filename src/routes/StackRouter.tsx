@@ -6,12 +6,12 @@ function StackRouter() {
   const { Navigator, Screen } = createNativeStackNavigator();
   return (
     <Navigator>
-      <Screen 
-        name="Home" 
-        component={Home} 
+      <Screen
+        name="Home"
+        component={Home}
       />
-    </Navigator>  
+    </Navigator>
   );
 }
 
-export default StackRouter
+export default StackRouter;
