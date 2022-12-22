@@ -8,6 +8,9 @@ function StackRouter() {
   return (
     <Navigator
       initialRouteName="Home"
+      screenOptions={{
+        headerShown: false,
+      }}
     >
       <Screen
         name="Home"
