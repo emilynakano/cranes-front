@@ -1,5 +1,7 @@
 import React from 'react';
 import { useFonts } from 'expo-font';
+import { ThemeProvider } from 'styled-components/native';
+import { light } from './src/theme';
 import Route from './src/routes';
 import {
   RobotoBlack, RobotoBold, RobotoMedium, RobotoRegular,
@@ -15,7 +17,9 @@ function App() {
 
   if (!loaded) return null;
   return (
-    <Route />
+    <ThemeProvider theme={light}>
+      <Route />
+    </ThemeProvider>
   );
 }
 
