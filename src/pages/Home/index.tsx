@@ -1,8 +1,8 @@
 import {
   View, Image, ScrollView,
 } from 'react-native';
-import Tf1 from '../../assets/Tf1.png';
-import Tf2 from '../../assets/Tf2.png';
+import Tf1 from '../../../assets/Tf1.png';
+import Tf2 from '../../../assets/Tf2.png';
 
 function Home() {
   return (
