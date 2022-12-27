@@ -1,10 +1,13 @@
 import { Text } from '@react-native-material/core';
 import React, { useState } from 'react';
-import { FlatList } from 'react-native';
+
 import {
   AuthOption,
   AuthOptions, Container, DownSide, Row, UpSide,
 } from './styles';
+
+import SignUp from './SignUp';
+import Login from './Login';
 
 export default function Auth() {
   const authOptions: [string, string] = ['Login', 'Sign-up'];
@@ -26,7 +29,9 @@ export default function Auth() {
           ))}
         </AuthOptions>
       </UpSide>
-      <DownSide />
+      <DownSide>
+        {authSelected === 'Login' ? <Login /> : <SignUp />}
+      </DownSide>
     </Container>
   );
 }
