@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
-import { TextInput, Button } from 'react-native-paper';
-import { Container, Main } from './styleForm';
+import { TextInput } from 'react-native-paper';
+import {
+  Container, Main, Input, Button,
+} from './styleForm';
 
 function Login() {
   const [checkPassword, setCheckPassword] = useState(false);
   return (
     <Container>
       <Main>
-        <TextInput
+        <Input
           mode="outlined"
           label="Email"
         />
-        <TextInput
+        <Input
           mode="outlined"
           label="Password"
           secureTextEntry={!checkPassword}
@@ -20,7 +22,7 @@ function Login() {
             : <TextInput.Icon icon="eye" onPress={() => setCheckPassword(!checkPassword)} />}
         />
       </Main>
-      <Button style={{ backgroundColor: '#FA4A0C' }} mode="contained" onPress={() => console.log('Pressed')}>
+      <Button mode="contained" onPress={() => console.log('Pressed')}>
         Login
       </Button>
     </Container>
