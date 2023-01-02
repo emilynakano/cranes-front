@@ -11,7 +11,7 @@ import Login from './Login';
 
 export default function Auth() {
   const authOptions: [string, string] = ['Login', 'Sign-up'];
-  const [authSelected, setAuthSelected] = useState('Sign-up');
+  const [authSelected, setAuthSelected] = useState('Login');
   return (
     <Container>
       <UpSide>
