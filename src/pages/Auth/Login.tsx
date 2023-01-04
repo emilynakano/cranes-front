@@ -10,11 +10,9 @@ function Login() {
     <Container>
       <Main>
         <Input
-          mode="outlined"
           label="Email"
         />
         <Input
-          mode="outlined"
           label="Password"
           secureTextEntry={!checkPassword}
           right={checkPassword
