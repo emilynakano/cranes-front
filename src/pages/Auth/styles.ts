@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
   flex: 1;
   background: ${({ theme }) => theme.COLORS.background};
 `;
@@ -9,6 +9,8 @@ export const UpSide = styled.View`
   flex: 0.4;
   background: ${({ theme }) => theme.COLORS.background_light};
   border-radius: 30px;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
 
   align-items: center;
   justify-content: space-between;
