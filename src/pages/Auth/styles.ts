@@ -5,6 +5,10 @@ export const Container = styled.SafeAreaView`
   background: ${({ theme }) => theme.COLORS.background};
 `;
 
+export const Text = styled.Text`
+  color: ${({ theme }) => theme.COLORS.primary};
+`;
+
 export const UpSide = styled.View`
   flex: 0.4;
   background: ${({ theme }) => theme.COLORS.background_light};
@@ -18,6 +22,17 @@ export const UpSide = styled.View`
 
 export const DownSide = styled.View`
   flex: 0.6;
+`;
+
+export const Logo = styled.View`
+  height: calc(100% - 40px);
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Image = styled.Image`
+  width: 160px; 
+  height: 160px;
 `;
 
 export const AuthOptions = styled.View`

@@ -1,11 +1,9 @@
-import { Text } from '@react-native-material/core';
 import React, { useState } from 'react';
-
+import Tf1 from '../../../assets/images/logo.png';
 import {
-  AuthOption,
-  AuthOptions, Container, DownSide, Row, UpSide,
+  AuthOption, Text, Image,
+  AuthOptions, Container, DownSide, Row, UpSide, Logo,
 } from './styles';
-
 import SignUp from './SignUp';
 import Login from './Login';
 
@@ -15,9 +13,9 @@ export default function Auth() {
   return (
     <Container>
       <UpSide>
-        <Text>
-          logo
-        </Text>
+        <Logo>
+          <Image source={Tf1} />
+        </Logo>
         <AuthOptions>
           {authOptions.map((_auth) => (
             <AuthOption onPress={() => setAuthSelected(_auth)} activeOpacity={1}>

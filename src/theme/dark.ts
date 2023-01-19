@@ -1,11 +1,11 @@
 export default {
   COLORS: {
-    background: '#F2F2F2',
-    background_light: '#fff',
+    background: '#090909',
+    background_light: '#000',
 
     details: '#e50000',
 
-    primary: '#000',
+    primary: '#fff',
     secondary: '#525252',
     tertiary: '#F9F9F',
   },

@@ -11,8 +11,9 @@ export const Main = styled.View`
   gap: 20px;
 `;
 
-export const Input = styled(TextInput).attrs(() => ({
-  activeUnderlineColor: 'black',
+export const Input = styled(TextInput).attrs(({ theme }) => ({
+  activeUnderlineColor: `${theme.COLORS.primary}`,
+  underlineColor: `${theme.COLORS.primary}`,
 }))`
   background-color: ${({ theme }) => theme.COLORS.background};
 `;
