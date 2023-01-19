@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { TextInput } from 'react-native-paper';
 import {
@@ -6,6 +7,7 @@ import {
 
 function Login() {
   const [checkPassword, setCheckPassword] = useState(false);
+  const { navigate } = useNavigation();
   return (
     <Container>
       <Main>
@@ -20,7 +22,7 @@ function Login() {
             : <TextInput.Icon icon="eye" onPress={() => setCheckPassword(!checkPassword)} />}
         />
       </Main>
-      <Button mode="contained" onPress={() => console.log('Pressed')}>
+      <Button mode="contained" onPress={() => navigate('home')}>
         Login
       </Button>
     </Container>

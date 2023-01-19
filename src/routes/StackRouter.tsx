@@ -2,28 +2,23 @@ import * as React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../pages/Home/index';
 import Auth from '../pages/Auth/index';
-import HomeUser from '../pages/HomeUser/index';
 
 function StackRouter() {
   const { Navigator, Screen } = createNativeStackNavigator();
   return (
     <Navigator
-      initialRouteName="Auth"
+      initialRouteName="auth"
       screenOptions={{
         headerShown: false,
       }}
     >
       <Screen
-        name="Home"
+        name="home"
         component={Home}
       />
       <Screen
-        name="Auth"
+        name="auth"
         component={Auth}
-      />
-      <Screen
-        name="HomeUser"
-        component={HomeUser}
       />
     </Navigator>
   );
