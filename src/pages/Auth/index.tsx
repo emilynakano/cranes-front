@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Tf1 from '../../../assets/images/logo.png';
+import { logo as logoImg } from '../../../assets/images';
 import {
   AuthOption, Text, Image,
   AuthOptions, Container, DownSide, Row, UpSide, Logo,
@@ -14,7 +14,7 @@ export default function Auth() {
     <Container>
       <UpSide>
         <Logo>
-          <Image source={Tf1} />
+          <Image source={logoImg} />
         </Logo>
         <AuthOptions>
           {authOptions.map((_auth) => (
