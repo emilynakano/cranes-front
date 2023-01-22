@@ -3,7 +3,7 @@ import {
 } from 'react-native';
 
 import { Header } from '../../components';
-import CarouselImages from './CarouselImages';
+import CarouselImages from './carouselImages';
 
 export default function Home() {
   return (
