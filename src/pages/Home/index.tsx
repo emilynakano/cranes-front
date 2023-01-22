@@ -1,14 +1,15 @@
-import { SafeAreaView, ScrollView, Text } from 'react-native';
-import React from 'react';
+import {
+  SafeAreaView,
+} from 'react-native';
+
 import { Header } from '../../components';
+import CarouselImages from './CarouselImages';
 
 export default function Home() {
   return (
     <SafeAreaView>
       <Header />
-      <ScrollView>
-        <Text>{'Home'.repeat(100)}</Text>
-      </ScrollView>
+      <CarouselImages />
     </SafeAreaView>
   );
 }
