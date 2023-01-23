@@ -6,7 +6,7 @@ import React, {
   Ref, useRef, useState, useEffect,
 } from 'react';
 import { SlideShow, Image } from './styles';
-import { logo } from '../../../../assets/images';
+import { banner, banner2 } from '../../../../assets/images';
 
 const dim = Dimensions.get('window').width;
 
@@ -37,8 +37,8 @@ export default function CarouselImages() {
       showsHorizontalScrollIndicator={false}
       ref={scrolRef}
     >
-      <Image resizeMode="cover" source={logo} />
-      <Image resizeMode="cover" source={logo} />
+      <Image resizeMode="cover" source={banner} />
+      <Image resizeMode="cover" source={banner2} />
     </SlideShow>
   );
 }
