@@ -1,15 +1,18 @@
 import {
-  SafeAreaView,
+  SafeAreaView, Text,
 } from 'react-native';
 
 import { Header } from '../../components';
+import BookList from '../../components/BookList';
 import CarouselImages from './carouselImages';
+import { Container } from './styles';
 
 export default function Home() {
   return (
-    <SafeAreaView>
+    <Container>
       <Header />
       <CarouselImages />
-    </SafeAreaView>
+      <BookList />
+    </Container>
   );
 }
