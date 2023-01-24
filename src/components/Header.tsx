@@ -1,18 +1,6 @@
-/* eslint-disable @typescript-eslint/no-use-before-define */
 import styled from 'styled-components/native';
 import { logo } from '../../assets/images';
 
-function Header() {
-  return (
-    <Container>
-      <Logo />
-      <Text>
-        Crânes
-      </Text>
-      <LogoTranslate />
-    </Container>
-  );
-}
 const Container = styled.View`
   height: 60px;
   background-color: ${({ theme }) => theme.COLORS.background_light};
@@ -38,5 +26,17 @@ const Text = styled.Text`
   font-weight: 800;
   font-size: 24px;
 `;
+
+function Header() {
+  return (
+    <Container>
+      <Logo />
+      <Text>
+        Crânes
+      </Text>
+      <LogoTranslate />
+    </Container>
+  );
+}
 
 export default Header;
