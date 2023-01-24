@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
   flex: 1;
-  background: ${({ theme }) => theme.COLORS.background};
+  background: ${({ theme }) => theme.COLORS.background_light};
 `;
 
 export const Text = styled.Text`
@@ -11,7 +11,7 @@ export const Text = styled.Text`
 
 export const UpSide = styled.View`
   flex: 0.4;
-  background: ${({ theme }) => theme.COLORS.background_light};
+  background: ${({ theme }) => theme.COLORS.background};
   border-radius: 30px;
   border-top-left-radius: 0%;
   border-top-right-radius: 0%;

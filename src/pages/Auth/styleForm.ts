@@ -15,7 +15,7 @@ export const Input = styled(TextInput).attrs(({ theme }) => ({
   activeUnderlineColor: `${theme.COLORS.primary}`,
   underlineColor: `${theme.COLORS.primary}`,
 }))`
-  background-color: ${({ theme }) => theme.COLORS.background};
+  background-color: ${({ theme }) => theme.COLORS.background_light};
 `;
 
 export const Button = styled(ButtonStyle)`

@@ -1,7 +1,3 @@
-import {
-  SafeAreaView, Text,
-} from 'react-native';
-
 import { Header } from '../../components';
 import BookList from '../../components/BookList';
 import CarouselImages from './carouselImages';

@@ -3,7 +3,7 @@ import { logo } from '../../assets/images';
 
 const Container = styled.View`
   height: 60px;
-  background-color: ${({ theme }) => theme.COLORS.background_light};
+  background-color: ${({ theme }) => theme.COLORS.background};
   padding: 0 20px;
   flex-direction: row;
   align-items: center;

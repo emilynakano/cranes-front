@@ -1,7 +1,7 @@
 export default {
   COLORS: {
-    background: '#090909',
-    background_light: '#000',
+    background: '#000',
+    background_light: '#090909',
 
     details: '#e50000',
 
