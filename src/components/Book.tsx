@@ -1,11 +1,12 @@
 import { Dimensions } from 'react-native';
 import React from 'react';
 import styled from 'styled-components/native';
+import { useNavigation } from '@react-navigation/native';
 import { capa } from '../../assets/images';
 
 const { width } = Dimensions.get('window');
 
-const Container = styled.View`
+const Container = styled.TouchableOpacity`
   width: ${(width - 75) / 2};
   height: ${((width - 75) / 2) + 70};
 `;
@@ -27,8 +28,9 @@ const Details = styled.View`
 `;
 
 function Book() {
+  const { navigate } = useNavigation();
   return (
-    <Container>
+    <Container onPress={() => navigate('details')}>
       <Image source={capa} />
       <Details>
         <Title>Coracao Satanico</Title>
