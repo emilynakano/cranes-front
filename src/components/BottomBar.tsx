@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import IconsStyle from '@expo/vector-icons/Ionicons';
+import { useNavigation } from '@react-navigation/native';
 
 const Container = styled.View`
   width: 100%;
@@ -15,10 +16,11 @@ const Icon = styled(IconsStyle)`
 `;
 
 function BottomBar() {
+  const { navigate } = useNavigation();
   return (
     <Container>
       <Icon name="search" size={30} />
-      <Icon name="md-skull" size={30} />
+      <Icon name="md-skull" size={30} onPress={() => navigate('home')} />
       <Icon name="heart" size={30} />
       <Icon name="cart" size={30} />
     </Container>
