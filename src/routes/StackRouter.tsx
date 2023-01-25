@@ -8,7 +8,7 @@ function StackRouter() {
   const { Navigator, Screen } = createNativeStackNavigator();
   return (
     <Navigator
-      initialRouteName="details"
+      initialRouteName="home"
       screenOptions={{
         headerShown: false,
       }}
