@@ -3,19 +3,20 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../pages/Home/index';
 import Auth from '../pages/Auth/index';
 import Details from '../pages/Details';
+import RouterLayout from './RouterLayout';
 
 function StackRouter() {
   const { Navigator, Screen } = createNativeStackNavigator();
   return (
     <Navigator
-      initialRouteName="home"
+      initialRouteName="details"
       screenOptions={{
         headerShown: false,
       }}
     >
       <Screen
         name="home"
-        component={Home}
+        component={() => RouterLayout(Home)}
       />
       <Screen
         name="auth"
@@ -23,7 +24,7 @@ function StackRouter() {
       />
       <Screen
         name="details"
-        component={Details}
+        component={() => RouterLayout(Details)}
       />
     </Navigator>
   );
