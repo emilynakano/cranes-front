@@ -1,12 +1,30 @@
-import { View, Text } from 'react-native';
 import React from 'react';
 import { Header } from '../../components';
-import { Container } from '../Home/styles';
+import {
+  Container, Image, Title, Icon, Price, Text, Sinopse, Row, TextThin,
+} from './styles';
+import { capa } from '../../../assets/images';
 
 export default function Details() {
   return (
     <Container>
       <Header />
+      <Image source={capa} />
+      <Title> Coracao Satanico</Title>
+      <Price>
+        <Icon name="shopping-cart" size={32} />
+        <Text>
+          {'  '}
+          R$ 59,90
+        </Text>
+      </Price>
+      <Sinopse>
+        <Text>
+          SINOPSE
+        </Text>
+        <Row />
+        <TextThin>{'Lorem Ipsum '.repeat(24)}</TextThin>
+      </Sinopse>
     </Container>
   );
 }
