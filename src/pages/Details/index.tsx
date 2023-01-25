@@ -1,30 +1,37 @@
 import React from 'react';
 import { Header } from '../../components';
 import {
-  Container, Image, Title, Icon, Price, Text, Sinopse, Row, TextThin,
+  Container, Image, Title, Icon, Price, Text, Sinopse, Row, TextThin, Buy,
 } from './styles';
 import { capa } from '../../../assets/images';
 
 export default function Details() {
   return (
-    <Container>
-      <Header />
-      <Image source={capa} />
-      <Title> Coracao Satanico</Title>
-      <Price>
-        <Icon name="shopping-cart" size={32} />
+    <>
+      <Container showsHorizontalScrollIndicator={false}>
+        <Header />
+        <Image source={capa} />
+        <Title> Coracao Satanico</Title>
+        <Price>
+          <Icon name="shopping-cart" size={32} />
+          <Text>
+            {'  '}
+            R$ 59,90
+          </Text>
+        </Price>
+        <Sinopse>
+          <Text>
+            SINOPSE
+          </Text>
+          <Row />
+          <TextThin>{'Lorem Ipsum '.repeat(24)}</TextThin>
+        </Sinopse>
+      </Container>
+      <Buy>
         <Text>
-          {'  '}
-          R$ 59,90
+          COMPRAR
         </Text>
-      </Price>
-      <Sinopse>
-        <Text>
-          SINOPSE
-        </Text>
-        <Row />
-        <TextThin>{'Lorem Ipsum '.repeat(24)}</TextThin>
-      </Sinopse>
-    </Container>
+      </Buy>
+    </>
   );
 }

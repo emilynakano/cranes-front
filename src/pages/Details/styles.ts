@@ -49,3 +49,11 @@ export const TextThin = styled.View`
   font-size: 18;
   color: ${({ theme }) => theme.COLORS.primary};
 `;
+
+export const Buy = styled.View`
+  height: 40px;
+  width: 100%;
+  background-color: ${({ theme }) => theme.COLORS.details};   
+  align-items: center;
+  justify-content: center;
+`;
