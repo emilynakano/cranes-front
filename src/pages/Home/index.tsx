@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <Container showsHorizontalScrollIndicator={false}>
       <Header />
-      <CarouselImages />
       <BookList />
     </Container>
   );

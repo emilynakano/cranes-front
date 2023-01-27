@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import { logo } from '../../assets/images';
 
-const Container = styled.View`
+const Container = styled.SafeAreaView`
   height: 60px;
   background-color: ${({ theme }) => theme.COLORS.background};
   padding: 0 20px;

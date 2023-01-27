@@ -17,8 +17,8 @@ export default function Auth() {
           <Image source={logoImg} />
         </Logo>
         <AuthOptions>
-          {authOptions.map((_auth) => (
-            <AuthOption onPress={() => setAuthSelected(_auth)} activeOpacity={1}>
+          {authOptions.map((_auth, index) => (
+            <AuthOption key={index} onPress={() => setAuthSelected(_auth)} activeOpacity={1}>
               <Text>
                 {_auth}
               </Text>

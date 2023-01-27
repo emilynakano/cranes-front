@@ -1,5 +1,7 @@
+import { Dimensions } from 'react-native';
 import styled from 'styled-components/native';
 
+const { height } = Dimensions.get('screen');
 export const Container = styled.SafeAreaView`
   flex: 1;
   background: ${({ theme }) => theme.COLORS.background_light};
@@ -13,8 +15,6 @@ export const UpSide = styled.View`
   flex: 0.4;
   background: ${({ theme }) => theme.COLORS.background};
   border-radius: 30px;
-  border-top-left-radius: 0%;
-  border-top-right-radius: 0%;
 
   align-items: center;
   justify-content: space-between;
@@ -25,7 +25,7 @@ export const DownSide = styled.View`
 `;
 
 export const Logo = styled.View`
-  height: calc(100% - 40px);
+  height: ${`${height * 0.4 - 40}px`} ;
   align-items: center;
   justify-content: center;
 `;

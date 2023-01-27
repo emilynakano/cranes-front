@@ -11,13 +11,13 @@ const Container = styled.TouchableOpacity`
   height: ${((width - 75) / 2) + 70};
 `;
 const Image = styled.Image`
-  width: 100%;
-  height: calc(100% - 40px);
+  width: ${(width - 75) / 2};
+  height: ${((width - 75) / 2) + 70 - 40}
 `;
 const Title = styled.Text`
   color: ${({ theme }) => theme.COLORS.primary};
   white-space: nowrap; 
-  width: 100%; 
+  width: ${(width - 75) / 2}; 
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 800;

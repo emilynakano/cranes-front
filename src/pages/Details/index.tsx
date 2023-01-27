@@ -24,10 +24,10 @@ export default function Details() {
             SINOPSE
           </Text>
           <Row />
-          <TextThin>{'Lorem Ipsum '.repeat(24)}</TextThin>
+          <TextThin>{'Lorem Ipsum '.repeat(240)}</TextThin>
         </Sinopse>
       </Container>
-      <Buy>
+      <Buy onPress={() => alert('oi')}>
         <Text>
           COMPRAR
         </Text>

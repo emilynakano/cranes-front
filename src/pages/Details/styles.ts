@@ -1,6 +1,8 @@
 import styled from 'styled-components/native';
 import Ionicons from '@expo/vector-icons/Foundation';
+import { Dimensions } from 'react-native';
 
+const { height: heightScreen } = Dimensions.get('screen');
 export const Container = styled.ScrollView`
   flex: 1;
   background-color: ${({ theme }) => theme.COLORS.background_light};
@@ -9,7 +11,7 @@ export const Container = styled.ScrollView`
 
 export const Image = styled.Image`
   width: 100%;
-  height: 45vh;
+  height: ${heightScreen * 0.45};
 `;
 
 export const Text = styled.Text`
@@ -43,14 +45,14 @@ export const Row = styled.View`
   background-color: ${({ theme }) => theme.COLORS.primary};
 `;
 
-export const TextThin = styled.View`
+export const TextThin = styled.Text`
   text-align: center;
   font-weight: 500;
   font-size: 18;
   color: ${({ theme }) => theme.COLORS.primary};
 `;
 
-export const Buy = styled.View`
+export const Buy = styled.Pressable`
   height: 40px;
   width: 100%;
   background-color: ${({ theme }) => theme.COLORS.details};   
