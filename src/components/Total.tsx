@@ -1,10 +1,9 @@
-import { Alert } from 'react-native';
 import styled from 'styled-components/native';
 import Button from './Button';
 import Row from './Row';
 
 const Container = styled.View`
-  height: 120px;
+  height: 60px;
   justify-content: space-between;
 `;
 
@@ -13,10 +12,11 @@ const Text = styled.Text`
   font-size: 20;
   color: ${({ theme }) => theme.COLORS.primary};
   padding-left: 25px;
+  padding-bottom: 16px;
 `;
 
 interface ITotal {
-  price: number
+  price: number;
 }
 
 function Total({ price }: ITotal) {
@@ -28,7 +28,6 @@ function Total({ price }: ITotal) {
         {' '}
         {price.toFixed(2).replace('.', ',')}
       </Text>
-      <Button handleSubmit={() => Alert.alert('oi')} text="FINALIZAR" />
     </Container>
   );
 }
