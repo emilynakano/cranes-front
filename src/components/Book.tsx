@@ -6,18 +6,22 @@ import { capa } from '../../assets/images';
 
 const { width } = Dimensions.get('window');
 
+const bookWidth = (width - 75) / 2;
+const bookHeight = ((width - 75) / 2) + 70;
+
 const Container = styled.TouchableOpacity`
-  width: ${(width - 75) / 2};
-  height: ${((width - 75) / 2) + 70};
+  width: ${bookWidth};
+  height: ${bookHeight};
+  margin: 25px 0 0 25px;
 `;
 const Image = styled.Image`
-  width: ${(width - 75) / 2};
-  height: ${((width - 75) / 2) + 70 - 40}
+  width: ${bookWidth};
+  height: ${bookHeight - 40}
 `;
 const Title = styled.Text`
   color: ${({ theme }) => theme.COLORS.primary};
   white-space: nowrap; 
-  width: ${(width - 75) / 2}; 
+  width: ${bookWidth}; 
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 800;

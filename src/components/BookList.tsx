@@ -1,4 +1,3 @@
-import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import styled from 'styled-components/native';
 import Book from './Book';
@@ -6,9 +5,8 @@ import Book from './Book';
 const Container = styled.View`
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 25px;
 `;
 
 function BookList() {
