@@ -20,11 +20,18 @@ export const Book = styled.View`
 `;
 
 export const BookList = styled.ScrollView`
-  height: ${height * 0.80};
+  height: ${height - 120};
   margin-bottom: 25px;
 `;
 
 export const Total = styled.View`
-  height: ${height * 0.20};
+  height: 120px;
   justify-content: space-between;
+`;
+
+export const Text = styled.Text`
+  font-weight: 800;
+  font-size: 20;
+  color: ${({ theme }) => theme.COLORS.primary};
+  padding-left: 25px;
 `;
