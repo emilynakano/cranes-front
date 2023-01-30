@@ -45,11 +45,3 @@ export const TextThin = styled.Text`
   font-size: 18;
   color: ${({ theme }) => theme.COLORS.primary};
 `;
-
-export const Buy = styled.Pressable`
-  height: 40px;
-  width: 100%;
-  background-color: ${({ theme }) => theme.COLORS.details};   
-  align-items: center;
-  justify-content: center;
-`;

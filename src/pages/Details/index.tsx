@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Row } from '../../components';
+import { Button, Header, Row } from '../../components';
 import {
   Container, Image, Title, Icon, Price, Text, Sinopse, TextThin, Buy,
 } from './styles';
@@ -27,11 +27,7 @@ export default function Details() {
           <TextThin>{'Lorem Ipsum '.repeat(240)}</TextThin>
         </Sinopse>
       </Container>
-      <Buy onPress={() => alert('oi')}>
-        <Text>
-          COMPRAR
-        </Text>
-      </Buy>
+      <Button handleSubmit={() => alert('oi')} text="COMPRAR" />
     </>
   );
 }

@@ -24,7 +24,7 @@ export const BookList = styled.ScrollView`
   margin-bottom: 25px;
 `;
 
-export const Total = styled.ScrollView`
-  background-color: red;
+export const Total = styled.View`
   height: ${height * 0.20};
+  justify-content: space-between;
 `;
