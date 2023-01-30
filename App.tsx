@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFonts } from 'expo-font';
 import { ThemeProvider } from 'styled-components/native';
+import { StatusBar } from 'react-native';
 import { dark } from './src/theme';
 import Route from './src/routes';
 import {
@@ -18,6 +19,7 @@ function App() {
   if (!loaded) return null;
   return (
     <ThemeProvider theme={dark}>
+      <StatusBar />
       <Route />
     </ThemeProvider>
   );
