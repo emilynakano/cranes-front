@@ -1,4 +1,3 @@
-import { Alert } from 'react-native';
 import {
   Container, Book, BookList,
 } from './style';

@@ -5,12 +5,13 @@ import Auth from '../pages/Auth/index';
 import Details from '../pages/Details';
 import RouterLayout from './RouterLayout';
 import Cart from '../pages/Cart';
+import Payment from '../pages/Payment';
 
 function StackRouter() {
   const { Navigator, Screen } = createNativeStackNavigator();
   return (
     <Navigator
-      initialRouteName="cart"
+      initialRouteName="payment"
       screenOptions={{
         headerShown: false,
       }}
@@ -30,6 +31,10 @@ function StackRouter() {
       <Screen
         name="cart"
         component={() => RouterLayout(Cart)}
+      />
+      <Screen
+        name="payment"
+        component={() => RouterLayout(Payment)}
       />
     </Navigator>
   );
