@@ -1,7 +1,7 @@
 import React from 'react';
-import { Header } from '../../components';
+import { Header, Row } from '../../components';
 import {
-  Container, Image, Title, Icon, Price, Text, Sinopse, Row, TextThin, Buy,
+  Container, Image, Title, Icon, Price, Text, Sinopse, TextThin, Buy,
 } from './styles';
 import { capa } from '../../../assets/images';
 

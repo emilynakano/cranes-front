@@ -39,12 +39,6 @@ export const Sinopse = styled.View`
   gap: 5px;
 `;
 
-export const Row = styled.View`
-  height: 2px;
-  width: 100%;
-  background-color: ${({ theme }) => theme.COLORS.primary};
-`;
-
 export const TextThin = styled.Text`
   text-align: center;
   font-weight: 500;
