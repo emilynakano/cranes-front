@@ -4,12 +4,13 @@ import Home from '../pages/Home/index';
 import Auth from '../pages/Auth/index';
 import Details from '../pages/Details';
 import RouterLayout from './RouterLayout';
+import Cart from '../pages/Cart';
 
 function StackRouter() {
   const { Navigator, Screen } = createNativeStackNavigator();
   return (
     <Navigator
-      initialRouteName="home"
+      initialRouteName="cart"
       screenOptions={{
         headerShown: false,
       }}
@@ -25,6 +26,10 @@ function StackRouter() {
       <Screen
         name="details"
         component={() => RouterLayout(Details)}
+      />
+      <Screen
+        name="cart"
+        component={() => RouterLayout(Cart)}
       />
     </Navigator>
   );
